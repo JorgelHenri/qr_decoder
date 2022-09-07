@@ -1,0 +1,7 @@
+<!-- QRDecode - NODELET -->
+
+<library path="lib/libQRDecode">
+  <class name="qr_decode/QRDecode" type="qr_decode::QRDecode" base_class_type="nodelet::Nodelet">
+    <description>QRcode decoder nodelet</description>
+  </class>
+</library>
