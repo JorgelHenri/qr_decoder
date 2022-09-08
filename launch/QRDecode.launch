@@ -35,8 +35,8 @@
         <!-- ROS parameters config file -->
 
         <!-- Subscribers -->
-      <remap from="~image_in"       to="rgbd_down/color/image_raw"   />
-      <remap from="~camera_info_in" to="rgbd_down/color/camera_info" />
+      <remap from="~image_in"       to="rgbd/color/image_raw"   />
+      <remap from="~camera_info_in" to="rgbdcolor/camera_info" />
       
 
      </node>
