@@ -43,7 +43,7 @@ input=(
 '
   'Sensors' 'waitForRos; roslaunch mrs_uav_general sensors.launch
 '
-  'QRDecode' 'waitForControl roslaunch qr_code_decode QRDecode.launch
+  'QRDecode' 'roslaunch qr_code_decode QRDecode.launch
 '
   'Status' 'waitForRos; roslaunch mrs_uav_status status.launch
 '
@@ -156,7 +156,9 @@ done
 # send commands
 for ((i=0; i < ${#cmds[*]}; i++));
 do
-  $TMUX_BIN send-keys -t $SESSION_NAME:$(($i+1)) "cd $SCRIPTPATH;${pre_input};${cmds[$i]}"
+  $TMUX_BIN send-keys -t $SESSION_NAME:$(($i+1)) "cd $SCRIPTPATH;
+${pre_input};
+${cmds[$i]}"
 done
 
 # identify the index of the init window

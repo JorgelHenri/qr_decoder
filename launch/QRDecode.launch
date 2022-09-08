@@ -7,7 +7,7 @@
   <arg name="standalone" default="true" />
 
     <!-- allows disabling the gui from command line -->
-  <arg name="gui" default="true" />
+  <arg name="gui" default="false" />
 
     <!-- will it run using GNU debugger? -->
   <arg name="debug" default="false" />
